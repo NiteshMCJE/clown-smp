@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clown SMP Website</title>
+
+  <!-- Quicksand font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW1peGU5bG1nYWNpbXc2eTEwc2FvZnBpeW83eHEyZWxpanFwNXViayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2PWBLDJ2KtB1X6o9vY/giphy.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 50, 0.6);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      z-index: 999;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #cc99ff;
+      text-shadow: 0 0 10px #cc99ff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .logo:hover {
+      text-shadow: 0 0 15px #e0b3ff, 0 0 25px #e0b3ff;
+    }
+
+    .navbar-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 1.1rem;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: #1e1e2f;
+      box-shadow: 0 0 12px #bb99ff;
+      transition: all 0.3s ease;
+    }
+
+    .navbar-links a:hover {
+      background-color: #8844ff;
+      box-shadow: 0 0 20px #cc99ff, 0 0 30px #cc99ff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      min-height: 100vh;
+      padding: 120px 20px 60px 20px;
+      text-align: center;
+    }
+
+    h1, h2, h3 {
+      animation: floaty 3s ease-in-out infinite, wavy-text 4s ease-in-out infinite;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      color: #e0b3ff;
+      text-shadow: 0 0 10px #e0b3ff;
+    }
+
+    h2, h3 {
+      color: #cc99ff;
+      text-shadow: 0 0 8px #cc99ff;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 100px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+      background-color: #1e1e2f;
+      box-shadow: 0 0 12px #bb99ff;
+      transition: all 0.3s ease;
+    }
+
+    .btn.youtube {
+      background-color: #ff0000;
+      box-shadow: 0 0 12px #ff4d4d;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #cc99ff, 0 0 30px #cc99ff;
+    }
+
+    .btn.youtube:hover {
+      box-shadow: 0 0 20px #ff4d4d, 0 0 30px #ff4d4d;
+    }
+
+    .spacer {
+      height: 800px;
+    }
+
+    /* Floaty + Wavy Animation */
+    @keyframes floaty {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes wavy-text {
+      0% { letter-spacing: 0; }
+      50% { letter-spacing: 3px; }
+      100% { letter-spacing: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#home" class="logo">CLOWN SMP</a>
+    <div class="navbar-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="https://www.youtube.com/@notnitesh88" target="_blank">YouTube</a>
+      <a href="https://discord.gg/DS8cRWGr4E" target="_blank">Discord</a>
+    </div>
+  </div>
+
+  <!-- Home Section -->
+  <div class="overlay" id="home">
+    <h1>Welcome to Clown SMP</h1>
+    <p>Join the most chaotic and fun Minecraft experience online!</p>
+    <div class="buttons">
+      <a href="https://www.youtube.com/@notnitesh88" class="btn youtube" target="_blank">YouTube</a>
+      <a href="https://discord.gg/DS8cRWGr4E" class="btn" target="_blank">Discord</a>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="overlay" id="about">
+    <h2>About Clown SMP</h2>
+    <p>Clown SMP is a survival multiplayer server packed with fun, madness, and friends.</p>
+    <p>Join now and become part of the chaos!</p>
+
+    <!-- IP Address Section -->
+    <h2 style="font-size: 2.5rem; margin-top: 40px;">CLOWN SMP IP ADDRESS</h2>
+    <p style="font-size: 1.3rem;">IP → coming soon..</p>
+    <p style="font-size: 1.3rem;">Port → coming soon..</p>
+
+    <!-- Server Rules Section -->
+    <h2 style="font-size: 2.5rem; margin-top: 40px;">SERVER RULES</h2>
+    <p style="font-size: 1.3rem;">1. Be respectful to all players and staff..</p>
+    <p style="font-size: 1.3rem;">2. No griefing (destroying or altering others' builds without permission)..</p>
+    <p style="font-size: 1.3rem;">3. No hacking or use of unfair mods.</p>
+    <p style="font-size: 1.3rem;">4. Follow all staff instructions.</p>
+    <p style="font-size: 1.3rem;">5. No stealing from other players.</p>
+    <p style="font-size: 1.3rem;">6. No cheating or using hacked clients (X-ray, fly hacks, etc.).</p>
+    <p style="font-size: 1.3rem;">7. No spamming or flooding the chat.</p>
+    <p style="font-size: 1.3rem;">8. No advertising other servers or external websites.</p>
+    <p style="font-size: 1.3rem;">9. Keep chat appropriate — no hate speech, racism, sexism, or inappropriate content.</p>
+    <p style="font-size: 1.3rem;">10. No exploiting bugs or glitches — report them to staff.</p>
+    <p style="font-size: 1.3rem;">11. Build responsibly — do not build inappropriate structures or near others without consent.</p>
+
+    <div class="spacer"></div>
+  </div>
+
+</body>
+</html>
